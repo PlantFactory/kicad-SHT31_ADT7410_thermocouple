@@ -1,0 +1,296 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sht31-adt-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X05 J3
+U 1 1 59F95AE2
+P 8150 2800
+F 0 "J3" H 8150 3150 50  0000 C CNN
+F 1 "SHT31" V 8250 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" H 8150 2800 50  0001 C CNN
+F 3 "" H 8150 2800 50  0001 C CNN
+	1    8150 2800
+	1    0    0    -1  
+$EndComp
+Text Label 7400 2600 0    60   ~ 0
+VDD
+Text Label 7400 2700 0    60   ~ 0
+SDA
+Text Label 7400 2800 0    60   ~ 0
+SCL
+Text Label 7400 2900 0    60   ~ 0
+ADR
+Text Label 7400 3000 0    60   ~ 0
+GND
+Wire Wire Line
+	7400 2600 7950 2600
+Wire Wire Line
+	7950 2700 7400 2700
+Wire Wire Line
+	7400 2800 7950 2800
+Wire Wire Line
+	7400 2900 7950 2900
+Wire Wire Line
+	7950 3000 7400 3000
+$Comp
+L DIL8 J2
+U 1 1 59F95C85
+P 6000 2750
+F 0 "J2" H 6000 3000 50  0000 C CNN
+F 1 "ADT7410" V 6000 2750 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6000 2750 50  0001 C CNN
+F 3 "" H 6000 2750 50  0001 C CNN
+	1    6000 2750
+	1    0    0    -1  
+$EndComp
+Text Label 5250 2600 0    60   ~ 0
+SCL
+Text Label 5250 2700 0    60   ~ 0
+SDA
+Text Label 5250 2800 0    60   ~ 0
+A0
+Text Label 5250 2900 0    60   ~ 0
+A1
+Text Label 6600 2600 0    60   ~ 0
+VDD
+Text Label 6600 2700 0    60   ~ 0
+GND
+NoConn ~ 6350 2800
+NoConn ~ 6350 2900
+Wire Wire Line
+	5000 2600 5650 2600
+Wire Wire Line
+	4800 2700 5650 2700
+Wire Wire Line
+	4400 2800 5650 2800
+Wire Wire Line
+	4600 2900 5650 2900
+Wire Wire Line
+	6350 2600 6600 2600
+Wire Wire Line
+	6600 2700 6350 2700
+$Comp
+L CONN_01X04 J1
+U 1 1 59F95F2B
+P 3900 2750
+F 0 "J1" H 3900 3000 50  0000 C CNN
+F 1 "RJ45" V 4000 2750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3900 2750 50  0001 C CNN
+F 3 "" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+Text Label 3300 2600 0    60   ~ 0
+VDD
+Text Label 3300 2700 0    60   ~ 0
+SCL
+Text Label 3300 2800 0    60   ~ 0
+SDA
+Text Label 3300 2900 0    60   ~ 0
+GND
+Wire Wire Line
+	2950 2900 3700 2900
+Wire Wire Line
+	3300 2700 3700 2700
+$Comp
+L GND #PWR01
+U 1 1 59F9605F
+P 2950 3100
+F 0 "#PWR01" H 2950 2850 50  0001 C CNN
+F 1 "GND" H 2950 2950 50  0000 C CNN
+F 2 "" H 2950 3100 50  0001 C CNN
+F 3 "" H 2950 3100 50  0001 C CNN
+	1    2950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 59F9626D
+P 3200 2250
+F 0 "#FLG02" H 3200 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 2400 50  0000 C CNN
+F 2 "" H 3200 2250 50  0001 C CNN
+F 3 "" H 3200 2250 50  0001 C CNN
+	1    3200 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7400 2900
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 59FAB709
+P 2650 3100
+F 0 "#FLG03" H 2650 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2650 3250 50  0000 C CNN
+F 2 "" H 2650 3100 50  0001 C CNN
+F 3 "" H 2650 3100 50  0001 C CNN
+	1    2650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3100 2950 3100
+$Comp
+L C C1
+U 1 1 59FAC2E0
+P 7000 2550
+F 0 "C1" H 7025 2650 50  0000 L CNN
+F 1 "0.1u" H 7025 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7038 2400 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2300 6500 2600
+Wire Wire Line
+	6500 2400 7000 2400
+Connection ~ 6500 2600
+Wire Wire Line
+	6500 2700 6500 3750
+Wire Wire Line
+	6500 2800 7000 2800
+Wire Wire Line
+	7000 2800 7000 2700
+Connection ~ 6500 2700
+$Comp
+L R R1
+U 1 1 59FAC40F
+P 5000 2450
+F 0 "R1" V 5080 2450 50  0000 C CNN
+F 1 "10k" V 5000 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 59FAC4D0
+P 4800 2450
+F 0 "R2" V 4880 2450 50  0000 C CNN
+F 1 "10k" V 4800 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4730 2450 50  0001 C CNN
+F 3 "" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2300 6500 2300
+Connection ~ 6500 2400
+Connection ~ 5000 2300
+Wire Wire Line
+	4800 2700 4800 2600
+$Comp
+L CONN_01X02 J5
+U 1 1 59FBFC19
+P 4900 3250
+F 0 "J5" H 4900 3400 50  0000 C CNN
+F 1 "A1" V 5000 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J4
+U 1 1 59FBFDEB
+P 4500 3250
+F 0 "J4" H 4500 3400 50  0000 C CNN
+F 1 "A0" V 4600 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 4500 3250 50  0001 C CNN
+F 3 "" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3200 4700 2800
+Wire Wire Line
+	5100 3200 5100 2900
+Wire Wire Line
+	6500 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 3300
+Connection ~ 6500 2800
+Wire Wire Line
+	5100 3300 5100 3750
+Connection ~ 5100 3750
+$Comp
+L R R4
+U 1 1 59FBFF21
+P 4600 2450
+F 0 "R4" V 4680 2450 50  0000 C CNN
+F 1 "10k" V 4600 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 2450 50  0001 C CNN
+F 3 "" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59FC0037
+P 4400 2450
+F 0 "R3" V 4480 2450 50  0000 C CNN
+F 1 "10k" V 4400 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4330 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 2300
+Connection ~ 4600 2300
+Wire Wire Line
+	4600 2600 4600 2900
+Connection ~ 5100 2900
+Wire Wire Line
+	4400 2600 4400 2800
+Connection ~ 4700 2800
+Wire Wire Line
+	3200 2600 3700 2600
+Wire Wire Line
+	3200 2250 3200 2600
+Wire Wire Line
+	2950 3100 2950 2900
+Wire Wire Line
+	3300 2800 3700 2800
+$EndSCHEMATC
