@@ -1,0 +1,1 @@
+# kicad-SHT31_ADT7410_thermocouple
